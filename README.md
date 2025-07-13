@@ -1,17 +1,64 @@
-# Java Cloud-Native E-Commerce Platform
+# 🛒 Java Cloud-Native E-Commerce Platform
 
-A full-stack cloud-native e-commerce platform built with:
+This is a **1full-stack e-commerce project** built from scratch using modern Java backend and JavaScript frontend technologies. It is fully containerized and deployable to the cloud (AWS).
 
-- Java 17 + Spring Boot (Microservices)
-- Next.js + Tailwind CSS (Frontend)
-- PostgreSQL + Redis (Data Layer)
-- Docker & Kubernetes (Containerization & Deployment)
-- AWS (Production Environment)
+-------
+
+## 🏗️ Tech Stack
+
+### 🚀 Backend (Microservices)
+- Java 17, Spring Boot
+- Spring Security & JWT
+- PostgreSQL, Redis
+- Docker & Docker Compose
+- JPA/Hibernate
+
+### 🎨 Frontend
+- Next.js (React)
+- Tailwind CSS
 - Stripe (Payments)
+- Axios, React Query
 
-## Folder Structure
+### ☁️ DevOps / Deployment
+- Docker
+- Kubernetes (EKS)
+- AWS RDS, ECR, S3, CloudFront
+- GitHub Actions CI/CD
+- Sentry, CloudWatch (Logging & Monitoring)
+
+-------
+
+## 📁 Project Structure
 
 ecommerce-platform/
-├── backend/
-├── frontend/
-├── docs/
+├── backend/ # All Java Spring Boot microservices
+├── frontend/ # Next.js storefront
+├── docs/ # Progress journal, API docs, diagrams
+├── .gitignore
+├── README.md
+## ✅ Completed So Far
+
+| Day | Description |
+|-----|-------------|
+| Day 1 | Environment setup (Java, Node, Git, Docker) and project folder initialization |
+| Day 2 | [Pending] Auth microservice setup using Spring Boot |
+
+-------
+
+## 📅 Project Duration
+
+**12 weeks (84 days)** — 3–4 hours/day  
+Solo-built, fully documented, and version-controlled.
+
+-------
+
+## 🔗 GitHub Repository
+
+[github.com/yuvareddy2005/ecommerce-platform](https://github.com/yuvareddy2005/ecommerce-platform)
+
+-------
+
+## 📘 Developer Journal
+
+See [`docs/progress.md`](docs/progress.md) for detailed daily logs and architecture notes.
+✅
