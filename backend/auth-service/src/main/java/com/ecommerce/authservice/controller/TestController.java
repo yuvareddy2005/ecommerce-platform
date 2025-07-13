@@ -12,4 +12,5 @@ public class TestController {
     public String testEndpoint() {
         return "Auth service is up ✅";
     }
+    
 }
