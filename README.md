@@ -30,12 +30,17 @@ This is a **1full-stack e-commerce project** built from scratch using modern Jav
 
 ## 📁 Project Structure
 
+```text
 ecommerce-platform/
 ├── backend/ # All Java Spring Boot microservices
 ├── frontend/ # Next.js storefront
 ├── docs/ # Progress journal, API docs, diagrams
 ├── .gitignore
 ├── README.md
+```
+
+--------
+
 ## ✅ Completed So Far
 
 | Day | Description |
