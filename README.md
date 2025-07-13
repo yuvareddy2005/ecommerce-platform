@@ -46,7 +46,7 @@ ecommerce-platform/
 | Day | Description |
 |-----|-------------|
 | Day 1 | Environment setup (Java, Node, Git, Docker) and project folder initialization |
-| Day 2 | [Pending] Auth microservice setup using Spring Boot |
+| Day 2 | Created `auth-service` Spring Boot microservice, added `/api/auth/test` endpoint, and disabled security temporarily |
 
 -------
 
