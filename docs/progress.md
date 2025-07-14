@@ -121,10 +121,35 @@
 
 - Enabled JPA entity manager factory
 
+## ✅ Day 3 (cont.) – Auth Service Domain Model & Repository
+
+### 📂 Domain Model
+- Created `User` entity with:
+  - `id` (PK, auto-generated)
+  - `username` (unique)
+  - `password` (BCrypt‑encoded)
+  - `roles` (Set<String> stored via `@ElementCollection`)
+- Verified Hibernate created `users` and `user_roles` tables
+
+### 🗄️ Repository Layer
+- Added `UserRepository extends JpaRepository<User, Long>`
+- Included helper method: `Optional<User> findByUsername(String username)`
+
+### 🔧 Service Layer
+- Implemented `UserService` with `register(username, rawPassword)`
+- Registered `BCryptPasswordEncoder` bean in `SecurityConfig`
+- Encodes passwords before saving users
+
 ### 🧪 Testing
 - App started with ./mvnw spring-boot:run
 - Console confirmed connection to Dockerized DB
 - No database errors or missing driver issues
+- Restarted app: saw SQL `create table` logs for `users` and `user_roles`
+- Verified no startup errors and DB connection intact
+
+### 🛠️ GitHub Activity
+- Committed domain, repository, service, and config changes
+- Code pushed to `main`
 
 ### ✅ Outcome
 - Spring Boot app is now fully connected to PostgreSQL running in Docker
