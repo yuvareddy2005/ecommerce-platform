@@ -88,3 +88,44 @@
 ✅ **End of Day 2** — The authentication microservice has been initialized and verified locally.
 
 ---
+
+## ✅ Day 3 – PostgreSQL Setup with Docker + Spring Boot Integration
+
+### 🐘 PostgreSQL Installed with Docker Compose
+- Created `docker-compose.yml` inside `auth-service/`
+- Defined a PostgreSQL container using official `postgres:15` image
+- Mapped internal port `5432` to host machine for connectivity
+- Set environment variables:
+  - `POSTGRES_DB=auth_db`
+  - `POSTGRES_USER=postgres`
+  - `POSTGRES_PASSWORD=postgres`
+- Launched container using:  
+  ```bash
+  docker-compose up -d
+
+### ⚙️ Spring Boot Integration with PostgreSQL
+- Updated application.properties:
+
+  - spring.datasource.url=jdbc:postgresql://localhost:5432/auth_db
+  - spring.datasource.username=postgres
+  - spring.datasource.password=postgres
+  - spring.jpa.hibernate.ddl-auto=update
+
+- Removed the exclude = DataSourceAutoConfiguration.class to enable DB auto-config
+
+- Verified connection using:
+
+  - Hibernate logs
+  - HikariCP data source start
+  - Detected PostgreSQL version 15.13
+
+- Enabled JPA entity manager factory
+
+### 🧪 Testing
+- App started with ./mvnw spring-boot:run
+- Console confirmed connection to Dockerized DB
+- No database errors or missing driver issues
+
+### ✅ Outcome
+- Spring Boot app is now fully connected to PostgreSQL running in Docker
+- Database is ready to receive tables (entities coming in Day 4)
