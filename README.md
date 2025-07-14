@@ -47,8 +47,7 @@ ecommerce-platform/
 |-----|-------------|
 | Day 1 | Environment setup (Java, Node, Git, Docker) and project folder initialization |
 | Day 2 | Created `auth-service` Spring Boot microservice, added `/api/auth/test` endpoint, and disabled security temporarily |
-| Day 3 | Set up PostgreSQL via Docker Compose, configured Spring Boot to connect to the DB using Spring Data JPA |
-
+| Day 3 | Set up PostgreSQL via Docker Compose, connected Spring Boot to DB, and implemented User entity/repository/service with BCrypt |
 
 -------
 
