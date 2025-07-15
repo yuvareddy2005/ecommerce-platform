@@ -17,6 +17,9 @@ public class UserService {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
     }
+    public User findByUsername(String username) {
+        return userRepository.findByUsername(username).orElse(null);
+    }      
 
     public User register(String username, String rawPassword) {
         String encoded = passwordEncoder.encode(rawPassword);
